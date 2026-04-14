@@ -1,0 +1,33 @@
+body {
+    font-family: 'Poppins', sans-serif; 
+    background-color: #f8f5f2; 
+}
+
+.navbar {
+    background-color: #3e2723; 
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../assets/hero_index.jpg') no-repeat center center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.footer {
+    background-color: #3e2723;
+    color: white;
+    padding: 40px 0; 
+}
+
+.btn-coffee {
+    background-color: #795548;
+    color: white;
+}
+
+.btn-coffee:hover {
+    background-color: #5d4037;
+    color: white; 
+}

@@ -1,0 +1,42 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f2;
+}
+
+.navbar {
+    background-color: #3e2723;
+}
+
+.page-header {
+    background-color: #5d4037;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #3e2723;
+    color: white;
+    padding: 40px 0;
+}
+
+.card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn-beli {
+    background-color: #795548;
+    color: white;
+    width: 100%;
+}
+
+.btn-beli:hover {
+    background-color: #3e2723;
+    color: white;
+}
+
+.list-group-item.active {
+    background-color: #5d4037;
+    border-color: #5d4037;
+}

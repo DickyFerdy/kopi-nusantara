@@ -6,21 +6,7 @@
     <title>Kedai Kopi Nusantara - Toko</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Poppins', sans-serif; background-color: #f8f5f2; }
-        .navbar { background-color: #3e2723; }
-        .page-header {
-            background-color: #5d4037;
-            color: white;
-            padding: 60px 0;
-            text-align: center;
-        }
-        .footer { background-color: #3e2723; color: white; padding: 40px 0; }
-        .card { border: none; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        .btn-beli { background-color: #795548; color: white; width: 100%; }
-        .btn-beli:hover { background-color: #3e2723; color: white; }
-        .list-group-item.active { background-color: #5d4037; border-color: #5d4037; }
-    </style>
+    <link rel="stylesheet" href="style/toko.css">
 </head>
 <body class="d-flex flex-column min-vh-100">
 
@@ -70,7 +56,7 @@
                         
                         <div class="col-md-4 mb-4">
                             <div class="card h-100">
-                                <img src="https://images.unsplash.com/photo-1559525839-b184a4d698c7?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Biji Kopi Gayo" style="height: 200px; object-fit: cover;">
+                                <img src="assets/arabica_gayo.jpg" class="card-img-top" alt="Biji Kopi Gayo" style="height: 200px; object-fit: cover;">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Arabica Gayo - 200gr</h5>
                                     <p class="card-text text-muted mb-4">Rasa sedikit asam dengan wangi bunga dan rempah.</p>
@@ -84,7 +70,7 @@
 
                         <div class="col-md-4 mb-4">
                             <div class="card h-100">
-                                <img src="https://images.unsplash.com/photo-1587734195503-904fca47e0e9?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Biji Kopi Toraja" style="height: 200px; object-fit: cover;">
+                                <img src="assets/arabica_toraja.jpg" class="card-img-top" alt="Biji Kopi Toraja" style="height: 200px; object-fit: cover;">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Arabica Toraja - 200gr</h5>
                                     <p class="card-text text-muted mb-4">Kopi kental dengan rasa cokelat hitam.</p>
@@ -98,7 +84,7 @@
 
                         <div class="col-md-4 mb-4">
                             <div class="card h-100">
-                                <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Biji Kopi Lampung" style="height: 200px; object-fit: cover;">
+                                <img src="assets/robusta_lampung.jpg" class="card-img-top" alt="Biji Kopi Lampung" style="height: 200px; object-fit: cover;">
                                 <div class="card-body d-flex flex-column">
                                     <h5 class="card-title">Robusta Lampung - 250gr</h5>
                                     <p class="card-text text-muted mb-4">Rasa kuat dan pahit, sangat pas untuk kopi susu.</p>
@@ -122,15 +108,19 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>Kedai Kopi Nusantara</h5>
-                    <p>Meningkatkan hari Anda dengan secangkir kopi berkualitas sejak 2026.</p>
+                    <p>Menemani harimu dengan secangkir kopi sejak 2026.</p>
                 </div>
                 <div class="col-md-6 text-md-end">
                     <h5>Ikuti Kami</h5>
-                    <p>Instagram | Facebook | Twitter</p>
+                    <p>
+                        <a href="https://instagram.com/" target="_blank" class="text-white text-decoration-none me-2">Instagram</a> | 
+                        <a href="https://facebook.com/" target="_blank" class="text-white text-decoration-none me-2 ms-2">Facebook</a> | 
+                        <a href="https://x.com/" target="_blank" class="text-white text-decoration-none ms-2">X</a>
+                    </p>
                 </div>
             </div>
             <hr>
-            <p class="text-center mb-0">&copy; 2026 Kedai Kopi Nusantara. Dibuat dengan Bootstrap.</p>
+            <p class="text-center mb-0">© 2026 Kedai Kopi Nusantara. Dibuat dengan Bootstrap.</p>
         </div>
     </footer>
 

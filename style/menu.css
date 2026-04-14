@@ -1,0 +1,46 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f2;
+}
+
+.navbar {
+    background-color: #3e2723;
+}
+
+.page-header {
+    background-color: #5d4037;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #3e2723;
+    color: white;
+    padding: 40px 0;
+}
+
+.card {
+    transition: transform 0.3s;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.nav-pills .nav-link.active {
+    background-color: #795548;
+}
+
+.nav-pills .nav-link { 
+    color: #5d4037;
+    font-weight: 600;
+}
+
+.price-tag {
+    color: #795548;
+    font-weight: bold;
+    font-size: 1.2rem;
+}

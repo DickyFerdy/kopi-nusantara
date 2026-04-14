@@ -1,0 +1,27 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f5f2;
+}
+
+.navbar {
+    background-color: #3e2723;
+}
+
+.page-header {
+    background-color: #5d4037;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer {
+    background-color: #3e2723;
+    color: white;
+    padding: 40px 0;
+}
+
+.foto-tim {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}

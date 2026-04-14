@@ -1,0 +1,38 @@
+body {
+    font-family: 'Poppins',sans-serif;
+    background-color: #f8f5f2;
+}
+
+.navbar {
+    background-color: #3e2723;
+}
+
+.page-header {
+    background-color: #5d4037;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.footer { 
+    background-color: #3e2723;
+    color: white;
+    padding: 40px 0;
+}
+
+.btn-kopi {
+    background-color: #795548;
+    color: white;
+}
+
+.btn-kopi:hover {
+    background-color: #3e2723; 
+    color: white;
+}
+
+.kotak-putih {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
