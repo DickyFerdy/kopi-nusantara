@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hubungi Kedai Kopi Nusantara yang berlokasi di kawasan Medokan Ayu, Rungkut, Surabaya. Isi buku tamu dan tinggalkan pesan untuk kami.">
     <title>Kedai Kopi Nusantara - Kontak</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/kontak.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">KOPI NUSANTARA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
@@ -32,48 +41,74 @@
     <header class="page-header">
         <div class="container">
             <h1 class="display-4 fw-bold">Hubungi Kami</h1>
-            <p class="lead">Mampir ke kedai kami di Surabaya atau tinggalkan pesan.</p>
+            <p class="lead">Temukan hidden gem kopi kami di kawasan Rungkut atau tinggalkan pesan untuk kami.</p>
         </div>
     </header>
 
     <section class="py-5 flex-grow-1">
         <div class="container">
             <div class="row">
-                
+
                 <div class="col-md-5 mb-4">
                     <div class="kotak-putih h-100">
-                        <h3 class="mb-4" style="color: #3e2723;">Lokasi Kedai</h3>
-                        <p><strong>Alamat:</strong><br>Jl. Tunjungan No. 99, Surabaya, Jawa Timur</p>
-                        <p><strong>Telepon / WA:</strong><br>0812-3456-7890</p>
-                        <p><strong>Jam Buka:</strong><br>Senin - Minggu: 08.00 - 22.00 WIB</p>
-                        
+                        <h3 class="mb-4 section-accent">Lokasi Kedai</h3>
+
+                        <p>
+                            <strong>Alamat:</strong><br>
+                            Jl. Raya Medokan Ayu MA III No.D-35, Medokan Ayu, Kec. Rungkut, Surabaya, Jawa Timur (Referensi dari Moengkopi JiwARTspace)
+                        </p>
+
+                        <p>
+                            <strong>Telepon / WA:</strong><br>
+                            0857-3056-5400
+                        </p>
+
+                        <p>
+                            <strong>Jam Buka:</strong><br>
+                            Senin - Sabtu: 08.00 - 22.00 WIB
+                        </p>
+
+                        <p>
+                            <strong>Email:</strong><br>
+                            info@kopinusantara.com
+                        </p>
+
                         <div class="mt-4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126646.20968417723!2d112.64164284343118!3d-7.275612015091741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbf8381ac47f%3A0x3027a76e352be40!2sSurabaya%2C%20Surabaya%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1700000000000!5m2!1sen!2sid" width="100%" height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps?q=Medokan+Ayu+Surabaya&output=embed" width="100%"
+                                height="250" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-7 mb-4">
                     <div class="kotak-putih mb-4">
-                        <h3 class="mb-4" style="color: #3e2723;">Isi Buku Tamu</h3>
+                        <h3 class="mb-4 section-accent">Isi Buku Tamu</h3>
+
                         <form id="formBukuTamu">
                             <div class="mb-3">
                                 <label for="namaTamu" class="form-label">Nama Anda</label>
-                                <input type="text" class="form-control" id="namaTamu" required placeholder="Contoh: Andi">
+                                <input type="text" class="form-control" id="namaTamu" required
+                                    placeholder="Contoh: Andi">
                             </div>
+
                             <div class="mb-3">
                                 <label for="pesanTamu" class="form-label">Ulasan atau Pesan</label>
-                                <textarea class="form-control" id="pesanTamu" rows="3" required placeholder="Tulis pendapatmu tentang kopi kami..."></textarea>
+                                <textarea class="form-control" id="pesanTamu" rows="3" required
+                                    placeholder="Tulis pendapatmu tentang kopi kami..."></textarea>
                             </div>
+
                             <button type="submit" class="btn btn-kopi w-100">Kirim Pesan</button>
                         </form>
                     </div>
 
                     <div class="kotak-putih">
-                        <h4 class="mb-3" style="color: #3e2723;">Daftar Pesan Tamu</h4>
+                        <h4 class="mb-3 section-accent">Daftar Pesan Tamu</h4>
+
                         <div class="table-responsive">
                             <table class="table table-bordered table-striped">
-                                <thead style="background-color: #795548; color: white;">
+                                <thead>
                                     <tr>
                                         <th>Tanggal</th>
                                         <th>Nama</th>
@@ -82,7 +117,7 @@
                                 </thead>
                                 <tbody id="isiTabelTamu">
                                     <tr>
-                                        <td>12/04/2026</td>
+                                        <td>12/04/2026 - 10:30</td>
                                         <td>Budi</td>
                                         <td>Kopinya mantap, tempatnya asik buat nongkrong!</td>
                                     </tr>
@@ -101,23 +136,32 @@
             <div class="row">
                 <div class="col-md-6">
                     <h5>Kedai Kopi Nusantara</h5>
-                    <p>Menemani harimu dengan secangkir kopi sejak 2026.</p>
+                    <p class="mb-0">
+                        Menghadirkan kopi lokal Indonesia dengan kualitas terbaik, suasana yang nyaman, dan pelayanan ramah untuk menemani setiap momen Anda.
+                    </p>
                 </div>
+
                 <div class="col-md-6 text-md-end">
                     <h5>Ikuti Kami</h5>
-                    <p>
-                        <a href="https://instagram.com/" target="_blank" class="text-white text-decoration-none me-2">Instagram</a> | 
-                        <a href="https://facebook.com/" target="_blank" class="text-white text-decoration-none me-2 ms-2">Facebook</a> | 
-                        <a href="https://x.com/" target="_blank" class="text-white text-decoration-none ms-2">X</a>
+                    <p class="mb-0">
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+                            class="text-white text-decoration-none">Instagram</a>
+                        <span class="mx-2">|</span>
+                        <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer"
+                            class="text-white text-decoration-none">Facebook</a>
+                        <span class="mx-2">|</span>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                            class="text-white text-decoration-none">X</a>
                     </p>
                 </div>
             </div>
+
             <hr>
-            <p class="text-center mb-0">© 2026 Kedai Kopi Nusantara. Dibuat dengan Bootstrap.</p>
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script/kontak.js"></script>
 </body>
+
 </html>

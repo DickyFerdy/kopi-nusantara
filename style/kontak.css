@@ -1,38 +1,123 @@
 body {
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f8f5f2;
+    color: #333;
 }
 
+/* NAVBAR */
 .navbar {
     background-color: #3e2723;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+.navbar-brand {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f5d7b2 !important;
+}
+
+/* HEADER */
 .page-header {
-    background-color: #5d4037;
+    background: linear-gradient(rgba(93, 64, 55, 0.85), rgba(93, 64, 55, 0.85)),
+        url('../assets/bg_kontak.png') no-repeat center center;
+    background-size: cover;
     color: white;
-    padding: 60px 0;
+    padding: 80px 0;
     text-align: center;
 }
 
-.footer { 
+.page-header h1 {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* BOX */
+.kotak-putih {
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.section-accent {
+    color: #3e2723;
+}
+
+/* BUTTON */
+.btn-kopi {
+    background-color: #795548;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-kopi:hover {
+    background-color: #3e2723;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* FORM */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #d7ccc8;
+}
+
+.form-control:focus {
+    border-color: #795548;
+    box-shadow: 0 0 0 0.2rem rgba(121, 85, 72, 0.15);
+}
+
+/* TABLE */
+.table thead th {
+    background-color: #795548 !important;
+    color: white !important;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+/* FOOTER */
+.footer {
     background-color: #3e2723;
     color: white;
     padding: 40px 0;
 }
 
-.btn-kopi {
-    background-color: #795548;
+.footer a {
+    color: #f5d7b2;
+}
+
+.footer a:hover {
     color: white;
 }
 
-.btn-kopi:hover {
-    background-color: #3e2723; 
-    color: white;
-}
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 60px 20px;
+    }
 
-.kotak-putih {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .kotak-putih {
+        padding: 20px;
+    }
 }

@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Daftar menu Kedai Kopi Nusantara yang berisi kopi spesial, minuman non-kopi, dan camilan pendamping terbaik untuk menemani hari Anda.">
     <title>Kedai Kopi Nusantara - Menu</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/menu.css">
 </head>
+
 <body class="d-flex flex-column min-vh-100">
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">KOPI NUSANTARA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
@@ -31,118 +40,253 @@
 
     <header class="page-header">
         <div class="container">
-            <h1 class="display-4 fw-bold">Menu Kami</h1>
-            <p class="lead">Diseduh dengan cinta, dinikmati dengan senyuman.</p>
+            <h1 class="display-4 fw-bold">Menu Favorit Kami</h1>
+            <p class="lead">
+                Nikmati berbagai pilihan kopi spesial, minuman non-kopi, dan camilan lezat
+                yang cocok menemani aktivitas Anda.
+            </p>
         </div>
     </header>
 
     <section class="py-5 flex-grow-1">
         <div class="container">
-            
+            <div class="text-center mb-5">
+                <h2 class="section-title">Pilihan Menu Kedai Kopi Nusantara</h2>
+                <p class="section-subtitle">
+                    Semua menu kami dibuat dengan bahan berkualitas dan penyajian terbaik
+                    agar setiap pelanggan mendapatkan pengalaman yang memuaskan.
+                </p>
+            </div>
+
             <ul class="nav nav-pills justify-content-center mb-5" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-kopi-tab" data-bs-toggle="pill" data-bs-target="#pills-kopi" type="button" role="tab">Kopi Spesial</button>
+                    <button class="nav-link active" id="pills-kopi-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-kopi" type="button" role="tab" aria-controls="pills-kopi"
+                        aria-selected="true">
+                        Kopi Spesial
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-nonkopi-tab" data-bs-toggle="pill" data-bs-target="#pills-nonkopi" type="button" role="tab">Non-Kopi</button>
+                    <button class="nav-link" id="pills-nonkopi-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-nonkopi" type="button" role="tab" aria-controls="pills-nonkopi"
+                        aria-selected="false">
+                        Non-Kopi
+                    </button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-camilan-tab" data-bs-toggle="pill" data-bs-target="#pills-camilan" type="button" role="tab">Camilan</button>
+                    <button class="nav-link" id="pills-camilan-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-camilan" type="button" role="tab" aria-controls="pills-camilan"
+                        aria-selected="false">
+                        Camilan
+                    </button>
                 </li>
             </ul>
 
             <div class="tab-content" id="pills-tabContent">
-                
-                <div class="tab-pane fade show active" id="pills-kopi" role="tabpanel">
-                    <div class="row">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/espresso.jpg" class="card-img-top" alt="Espresso" style="height: 200px; object-fit: cover;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Espresso Single Origin</h5>
-                                    <p class="card-text text-muted">Kopi pekat dengan crema tebal dari biji Arabica Gayo.</p>
-                                    <p class="price-tag">Rp 20.000</p>
+
+                <div class="tab-pane fade show active" id="pills-kopi" role="tabpanel" aria-labelledby="pills-kopi-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/espresso.jpeg" class="w-100" alt="Espresso Nusantara">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Kopi Panas</span>
+                                    <h5 class="fw-bold">Espresso Nusantara</h5>
+                                    <p class="text-muted">Sajian espresso pekat dengan cream halus, menghadirkan cita rasa kopi lokal yang autentik.</p>
+                                    <p class="price-tag mb-0">Rp9.000</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/cappucino.jpg" class="card-img-top" alt="Cappuccino" style="height: 200px; object-fit: cover;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Classic Cappuccino</h5>
-                                    <p class="card-text text-muted">Paduan sempurna espresso, susu steam, dan foam lembut.</p>
-                                    <p class="price-tag">Rp 30.000</p>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/cappucino.jpg" class="w-100" alt="Classic Cappuccino">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Best Seller</span>
+                                    <h5 class="fw-bold">Classic Cappuccino</h5>
+                                    <p class="text-muted">Perpaduan espresso, susu steamed, dan foam lembut dengan rasa seimbang dan creamy.</p>
+                                    <p class="price-tag mb-0">Rp14.000</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/v60.jpg" class="card-img-top" alt="V60 Pour Over" style="height: 200px; object-fit: cover;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">V60 Pour Over</h5>
-                                    <p class="card-text text-muted">Seduhan manual filter untuk menonjolkan profil rasa asli biji kopi.</p>
-                                    <p class="price-tag">Rp 35.000</p>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/v60.jpeg" class="w-100" alt="V60 Pour Over">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Manual Brew</span>
+                                    <h5 class="fw-bold">V60 Pour Over</h5>
+                                    <p class="text-muted">Seduhan manual dengan teknik v60 yang menghasilkan rasa kopi bersih dan aromatik.</p>
+                                    <p class="price-tag mb-0">Rp17.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/kopi_susu.jpeg" class="w-100" alt="Kopi Susu Gula Aren">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Favorit Pelanggan</span>
+                                    <h5 class="fw-bold">Kopi Susu Gula Aren</h5>
+                                    <p class="text-muted">Perpaduan espresso, susu, dan gula aren khas Indonesia, dengan rasa manis dan creamy.</p>
+                                    <p class="price-tag mb-0">Rp16.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/americano.jpeg" class="w-100" alt="Americano">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Klasik</span>
+                                    <h5 class="fw-bold">Americano</h5>
+                                    <p class="text-muted">Espresso yang dipadukan dengan air panas yang ringan namun tetap kaya rasa.</p>
+                                    <p class="price-tag mb-0">Rp9.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/vanilla_latte.jpeg" class="w-100" alt="Vanilla Latte">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Milk Coffee</span>
+                                    <h5 class="fw-bold">Vanilla Latte</h5>
+                                    <p class="text-muted">Minuman kopi susu dengan sentuhan vanilla yang lembut, manis dan harum.</p>
+                                    <p class="price-tag mb-0">Rp16.000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="pills-nonkopi" role="tabpanel">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/matcha.jpg" class="card-img-top" alt="Matcha Latte" style="height: 200px; object-fit: cover;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Kyoto Matcha Latte</h5>
-                                    <p class="card-text text-muted">Teh hijau premium dari Jepang yang dipadukan dengan susu segar.</p>
-                                    <p class="price-tag">Rp 35.000</p>
+                <div class="tab-pane fade" id="pills-nonkopi" role="tabpanel" aria-labelledby="pills-nonkopi-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/matcha.jpeg" class="w-100" alt="Kyoto Matcha Latte">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Premium Tea</span>
+                                    <h5 class="fw-bold">Kyoto Matcha Latte</h5>
+                                    <p class="text-muted">Minuman Teh hijau dengan susu segar, creamy dan menenangkan.</p>
+                                    <p class="price-tag mb-0">Rp12.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/chocolate.jpeg" class="w-100" alt="Chocolate Signature">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Manis Hangat</span>
+                                    <h5 class="fw-bold">Chocolate Signature</h5>
+                                    <p class="text-muted">Minuman cokelat hangat dengan rasa manis lembut, cocok untuk semua usia.</p>
+                                    <p class="price-tag mb-0">Rp15.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/thai_tea.jpeg" class="w-100" alt="Thai Tea">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Segar</span>
+                                    <h5 class="fw-bold">Thai Tea</h5>
+                                    <p class="text-muted">Minuman teh susu khas Thailand dengan rasa manis, creamy dan menyegarkan.</p>
+                                    <p class="price-tag mb-0">Rp7.000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="tab-pane fade" id="pills-camilan" role="tabpanel">
-                    <div class="row justify-content-center">
-                        <div class="col-md-4 mb-4">
-                            <div class="card h-100">
-                                <img src="assets/croissant.jpg" class="card-img-top" alt="Croissant" style="height: 200px; object-fit: cover;">
-                                <div class="card-body text-center">
-                                    <h5 class="card-title">Butter Croissant</h5>
-                                    <p class="card-text text-muted">Renyah di luar, lembut di dalam. Pendamping setia ngopi.</p>
-                                    <p class="price-tag">Rp 25.000</p>
+                <div class="tab-pane fade" id="pills-camilan" role="tabpanel" aria-labelledby="pills-camilan-tab">
+                    <div class="row g-4">
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/croissant.jpg" class="w-100" alt="Butter Croissant">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Pastry</span>
+                                    <h5 class="fw-bold">Butter Croissant</h5>
+                                    <p class="text-muted">Pastry renyah di luar dan lembut di dalam, dan cocok untuk teman ngopi santai.</p>
+                                    <p class="price-tag mb-0">Rp12.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/french_fries.jpeg" class="w-100" alt="French Fries">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Snack</span>
+                                    <h5 class="fw-bold">French Fries</h5>
+                                    <p class="text-muted">Kentang goreng crispy dengan taburan bumbu gurih, cocok untuk sharing.</p>
+                                    <p class="price-tag mb-0">Rp13.000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="menu-card">
+                                <img src="assets/roti_bakar.jpeg" class="w-100" alt="Roti Bakar Cokelat Keju">
+                                <div class="p-4 text-center">
+                                    <span class="badge-menu">Ringan</span>
+                                    <h5 class="fw-bold">Roti Bakar Cokelat Keju</h5>
+                                    <p class="text-muted">Roti bakar dengan topping coklat dan keju yang manis gurih disukai banyak pelanggan.</p>
+                                    <p class="price-tag mb-0">Rp14.000</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+            </div>
+
+            <div class="mt-5">
+                <div class="cta-box p-4 p-md-5 text-center">
+                    <h2 class="section-title mb-3">Ingin Memesan Menu Favorit Anda?</h2>
+                    <p class="text-muted mb-4">
+                        Kunjungi halaman toko atau hubungi kami langsung
+                        untuk pemesanan dan informasi lebih lanjut.
+                    </p>
+                    <div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+                        <a href="toko.html" class="btn btn-coffee btn-lg px-4">Kunjungi Toko</a>
+                        <a href="kontak.html" class="btn btn-outline-coffee btn-lg px-4">Hubungi Kami</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <footer class="footer mt-auto">
         <div class="container">
-            <div class="row">
+            <div class="row g-4">
                 <div class="col-md-6">
-                    <h5>Kedai Kopi Nusantara</h5>
-                    <p>Menemani harimu dengan secangkir kopi sejak 2026.</p>
+                    <h5 class="fw-bold">Kedai Kopi Nusantara</h5>
+                    <p class="mb-2">
+                        Menghadirkan kopi lokal Indonesia dengan kualitas terbaik, suasana yang nyaman, dan pelayanan ramah untuk menemani setiap momen Anda.
+                    </p>
                 </div>
+
                 <div class="col-md-6 text-md-end">
-                    <h5>Ikuti Kami</h5>
-                    <p>
-                        <a href="https://instagram.com/" target="_blank" class="text-white text-decoration-none me-2">Instagram</a> | 
-                        <a href="https://facebook.com/" target="_blank" class="text-white text-decoration-none me-2 ms-2">Facebook</a> | 
-                        <a href="https://x.com/" target="_blank" class="text-white text-decoration-none ms-2">X</a>
+                    <h5 class="fw-bold">Ikuti Kami</h5>
+                    <p class="mb-0">
+                        <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer"
+                            class="text-white text-decoration-none">Instagram</a>
+                        <span class="mx-2">|</span>
+                        <a href="https://wa.me/6285730565400" target="_blank" rel="noopener noreferrer"
+                            class="text-white text-decoration-none">WhatsApp</a>
+                        <span class="mx-2">|</span>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                            class="text-white text-decoration-none">X</a>
                     </p>
                 </div>
             </div>
-            <hr>
-            <p class="text-center mb-0">© 2026 Kedai Kopi Nusantara. Dibuat dengan Bootstrap.</p>
+            <hr class="my-4">
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

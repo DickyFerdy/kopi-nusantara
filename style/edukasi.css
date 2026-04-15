@@ -1,42 +1,182 @@
+:root {
+    --coffee-dark: #3e2723;
+    --coffee-main: #6f4e37;
+    --coffee-light: #a1887f;
+    --cream: #f8f5f2;
+    --soft: #f3ece7;
+    --accent: #d7b899;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f8f5f2;
+    background-color: var(--cream);
+    color: #333;
 }
 
+/* NAVBAR */
 .navbar {
-    background-color: #3e2723
+    background-color: rgba(62, 39, 35, 0.96);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
+.navbar-brand {
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f5d7b2 !important;
+}
+
+/* HEADER */
 .page-header {
-    background: linear-gradient(rgba(93, 64, 55, 0.8), rgba(93, 64, 55, 0.8)), url('../assets/hero_edukasi.jpg');
+    background:
+        linear-gradient(rgba(93, 64, 55, 0.78), rgba(93, 64, 55, 0.78)),
+        url('../assets/hero_edukasi.jpg') no-repeat center center;
     background-size: cover;
     background-position: center;
     color: white;
-    padding: 80px 0;
+    padding: 90px 0;
     text-align: center;
 }
 
-.footer {
-    background-color: #3e2723;
-    color: white;
-    padding: 40px 0; 
+.page-header h1 {
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.35);
 }
 
+.section-title {
+    color: var(--coffee-dark);
+    font-weight: 700;
+}
+
+.section-subtitle {
+    color: #6c757d;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+/* IMAGE */
 .brewing-img {
-    border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-radius: 18px;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
     width: 100%;
-    height: 300px;
+    height: 320px;
     object-fit: cover;
 }
 
+/* ACCORDION */
+.accordion-item {
+    border: none;
+    border-radius: 12px !important;
+    overflow: hidden;
+    margin-bottom: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
 .accordion-button:not(.collapsed) {
-    background-color: #d7ccc8;
-    color: #3e2723;
-    font-weight: bold;
+    background-color: #e8d8ce;
+    color: var(--coffee-dark);
+    font-weight: 600;
+    box-shadow: none;
 }
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: #795548;
+    border-color: var(--coffee-main);
+}
+
+/* CARD */
+.info-card,
+.faq-card,
+.cta-box {
+    background: white;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    height: 100%;
+}
+
+.info-card {
+    transition: 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+}
+
+/* BADGE */
+.badge-custom {
+    display: inline-block;
+    background-color: var(--soft);
+    color: var(--coffee-dark);
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.highlight-section {
+    background-color: var(--soft);
+}
+
+/* BUTTON */
+.btn-coffee {
+    background-color: var(--coffee-main);
+    color: white;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-coffee:hover {
+    background-color: var(--coffee-dark);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-outline-coffee {
+    border: 2px solid var(--coffee-main);
+    color: var(--coffee-main);
+    transition: 0.3s ease;
+}
+
+.btn-outline-coffee:hover {
+    background-color: var(--coffee-main);
+    color: white;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--coffee-dark);
+    color: white;
+    padding: 50px 0 25px;
+}
+
+.footer a {
+    color: #f5d7b2;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 70px 20px;
+    }
+
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+
+    .brewing-img {
+        height: 250px;
+    }
 }
